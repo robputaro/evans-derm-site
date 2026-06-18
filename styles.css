@@ -318,3 +318,31 @@ svg {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 760px) {
+  .hero,
+  .section,
+  .container,
+  .page-shell,
+  .hero-inner,
+  .grid,
+  .split {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-inner,
+  .split,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy,
+  .hero-visual,
+  .section-copy,
+  .section-header {
+    text-align: center;
+    align-items: center;
+  }
+}
