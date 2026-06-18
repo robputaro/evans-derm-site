@@ -301,64 +301,44 @@ h3{font-weight:500;font-size:1.28rem;letter-spacing:-.005em;margin-bottom:10px}
   .image-stack{min-height:auto}
   .score-block strong{font-size:3.6rem}
 }
-/* Mobile horizontal overflow fix */
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  position: relative;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img,
-video,
-svg {
-  max-width: 100%;
-  height: auto;
-}
-
 @media (max-width: 760px) {
+  body {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  main,
+  section,
   .hero,
   .hero-inner,
-  .hero-visual,
   .container,
   .section,
   .section-inner,
-  .cards,
-  .card-grid,
-  .service-grid,
-  .quick-actions,
+  .content-wrap,
+  .page-wrap,
   .split,
-  .feature-grid,
-  .page-wrap {
+  .grid,
+  .quick-actions,
+  .appointment-section {
     width: 100%;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
+  .hero-image,
   .hero-visual,
-  .portrait-card,
   .image-card,
   .appointment-card,
   .feature-card,
-  .service-card {
-    max-width: calc(100vw - 40px);
-  }
-}
-@media (max-width: 760px) {
-  .hero-visual {
-    position: relative;
-    left: auto;
-    right: auto;
-    transform: none;
-    margin: 0 auto;
+  .service-card,
+  .quick-card {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
