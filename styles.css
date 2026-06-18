@@ -301,3 +301,20 @@ h3{font-weight:500;font-size:1.28rem;letter-spacing:-.005em;margin-bottom:10px}
   .image-stack{min-height:auto}
   .score-block strong{font-size:3.6rem}
 }
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+}
