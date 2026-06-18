@@ -342,3 +342,19 @@ h3{font-weight:500;font-size:1.28rem;letter-spacing:-.005em;margin-bottom:10px}
     margin-right: auto !important;
   }
 }
+@media (max-width: 760px) {
+  .hero-visual,
+  .image-card,
+  .hero-image-wrap,
+  .hero-media,
+  .portrait-card {
+    display: block;
+    width: calc(100vw - 40px) !important;
+    max-width: calc(100vw - 40px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+}
