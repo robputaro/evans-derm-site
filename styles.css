@@ -301,11 +301,16 @@ h3{font-weight:500;font-size:1.28rem;letter-spacing:-.005em;margin-bottom:10px}
   .image-stack{min-height:auto}
   .score-block strong{font-size:3.6rem}
 }
+/* Mobile horizontal overflow fix */
 html,
 body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+body {
+  position: relative;
 }
 
 * {
@@ -318,31 +323,42 @@ svg {
   max-width: 100%;
   height: auto;
 }
+
 @media (max-width: 760px) {
   .hero,
-  .section,
-  .container,
-  .page-shell,
   .hero-inner,
-  .grid,
-  .split {
+  .hero-visual,
+  .container,
+  .section,
+  .section-inner,
+  .cards,
+  .card-grid,
+  .service-grid,
+  .quick-actions,
+  .split,
+  .feature-grid,
+  .page-wrap {
     width: 100%;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .hero-inner,
-  .split,
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-copy,
   .hero-visual,
-  .section-copy,
-  .section-header {
-    text-align: center;
-    align-items: center;
+  .portrait-card,
+  .image-card,
+  .appointment-card,
+  .feature-card,
+  .service-card {
+    max-width: calc(100vw - 40px);
+  }
+}
+@media (max-width: 760px) {
+  .hero-visual {
+    position: relative;
+    left: auto;
+    right: auto;
+    transform: none;
+    margin: 0 auto;
   }
 }
